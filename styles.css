@@ -5,10 +5,13 @@
 }
 
 body{
-    font-family: HelveticaNeue;
+    font-family: Helvetica;
     font-size: 18px;
-
+    height: 100vh;
+    
 }
+
+/* logo */
 
 .logo{
 
@@ -28,6 +31,38 @@ body{
 
 }
 
+main{
+    text-align: center;
+}
+
 section{
-    margin: 20px;
+    margin: 30px;
+}
+
+/*header */
+
+header h1{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+/* buttons */
+
+button{
+    border-radius: 50px;
+    width: 228px;
+    height: 48px;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.button1{
+    background-color: #000000;
+    color: #FFFC00;
+}
+
+.button2{
+    background-color: #BBBBBB;
+    color: white;
 }
