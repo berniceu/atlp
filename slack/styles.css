@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    font-size: 18px;
+    text-align: center;
+
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: 100vh;
+}
+
+.illustration{
+    text-align: center;
+}
+
+/*.illustration img{
+    max-width: 100%;
+    height: auto;
+}*/
+
+.login{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: left;
+}
+
+
+
+
+
+
