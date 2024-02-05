@@ -6,56 +6,98 @@
 
 body{
     height: 100vh;
+    width: 100%;
     font-size: 18px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgba(34, 34, 34, 0.712);
+    overflow: hidden;
+
 
 }
 
+/* create grid and divide page width */
 
-.container{
+
+.grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     height: 100vh;
 }
 
-.illustration{
-    text-align: center;
+/* center the login page container*/
+
+.container{
+   margin: auto;
+   border: 3px solid purple;
+   padding: 10px;
+   height: 70%;
+
 }
-
-
 
 .login{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    align-items: center;
-    padding-top: 180px;
+    
+    align-items: flex-start;
+    justify-content: center;
+    
     gap: 2rem;
     text-align: left;
-    max-width: ;
     
 }
 
-.login.logo{
-    text-align: left;
+div{
+    margin: 1rem;
+}
+
+/*
+.login.info {
+    display: flex;
+    gap: 2rem;
+
+}
+
+
+
+.checkbox{
+    display: flex;
+}
+
+.checkbox a{
+    color: purple;
+    text-decoration: none;
+    font-weight: 500;
+   justify-content: flex-end;
+    
+
 }
 
 button {
-        border-radius: 50px;
-        width: 228px;
+        border-radius: 10px;
+        width: 100%;
         height: 48px;
         border: none;
-        font-size: 1.1rem;
+        font-size: 1rem;
         cursor: pointer;
     
 }
 
+.login-btn{
+    color: white;
+    background-color: purple;
+    
+}
+*/
+
 /* register */
 
-
+.register a {
+    text-decoration: none;
+    font-weight: 500;
+    color: purple;
+}
 
 
 
