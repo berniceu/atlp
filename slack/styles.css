@@ -30,9 +30,10 @@ body{
 
 .container{
    margin: auto;
-   border: 3px solid purple;
+   
    padding: 10px;
    height: 70%;
+   min-width: 700px;
 
 }
 
@@ -52,7 +53,7 @@ div{
     margin: 1rem;
 }
 
-/*
+
 .login.info {
     display: flex;
     gap: 2rem;
@@ -65,15 +66,19 @@ div{
     display: flex;
 }
 
+
+#remember-me:checked {
+    background-color: purple;
+}
 .checkbox a{
     color: purple;
     text-decoration: none;
     font-weight: 500;
-   justify-content: flex-end;
+    gap: 2rem;
     
 
 }
-*/
+
 
 /*buttons */
 button {
