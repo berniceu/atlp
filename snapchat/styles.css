@@ -112,7 +112,19 @@ button{
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin: auto;
 }
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group h6{
+    margin: 0;
+}
+
+
 .login-form h3{
     color: #BBBBBB;
     font-size: 1.5rem;
@@ -163,6 +175,14 @@ button{
 
 }
 
+#username,
+#password {
+    color: #BBBBBB;
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
 
 
 

@@ -26,8 +26,16 @@
 
         <section class="login-form">
             <h3>OR</h3>
-            <input type="text" placeholder="USERNAME OR EMAIL">
+            <div class="input-group">
+                <h6 id="username">USERNAME OR EMAIL</h6>
+                <input type="text" placeholder="USERNAME OR EMAIL" id="usernameInput" required>
+            </div>
+            
+            <div class="input-group">
+                <h6 id="password">PASSWORD</h6>
             <input type="text" placeholder="PASSWORD" id="passwordInput" required>
+            </div>
+            
 
             <a href="" class="password">Forgot password?</a>
 
@@ -45,6 +53,28 @@
         password.addEventListener("input", function () {
             this.value = this.value.replace(/./g, "*");
         });
+
+        const usernameHeading = document.getElementById("username");
+        const passwordHeading = document.getElementById("password");
+        const passwordInput = document.getElementById("passwordInput");
+        const usernameInput = document.getElementById("usernameInput");
+
+        usernameInput.addEventListener("input", () => {
+            if (this.value !== this.placeholder){
+                usernameHeading.style.display = 'none';
+            } else {
+                usernameHeading.style.display = 'flex';
+            }
+        });
+
+        passwordInput.addEventListener("input", () => {
+            if (this.value !== this.placeholder){
+                passwordHeading.style.display = 'none';
+            } else {
+                passwordHeading.style.display = 'flex';
+            }
+        });
+        
     </script>
 </body>
 </html>
