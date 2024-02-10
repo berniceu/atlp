@@ -22,13 +22,34 @@ body{
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    
     height: 100vh;
+    overflow: hidden;
 }
 
 .illustration{
     height: 100%;
-    overflow: auto;
+    
+    
+}
+
+.illustration img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 1300px) {
+    .illustration {
+        display: none;
+    }
+
+    .grid{
+        display: block;
+    }
+    .container{
+        
+    }
 }
 
 /* center the login page container*/
@@ -88,39 +109,18 @@ body{
     color: #333;
 }
 
-.checkbox input[type="checkbox"]{
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 5px;
-    background-color: purple;
+
+
+
+.checkbox input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    accent-color: purple;
     border: 1px solid #ccc;
-    position: relative;
-
-}
-
-.checkbox input[type="checkbox"]::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    width: 6px;
-    height: 12px;
-    border: 2px solid white;
-    border-left: none;
-    border-bottom: none;
-    visibility: hidden;
-}
-
-
-.checkbox input[type="checkbox"]:checked::before {
-    visibility: visible;
-}
-/*.checkbox input[type="checkbox"]:checked + label {
-    font-weight: bold;
-    color: purple;
-}*/
+    border-radius: 5px;
+    text-align: center;
+  }
+  
 
 
 
