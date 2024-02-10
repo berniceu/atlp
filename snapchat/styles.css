@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Helvetica LT Std Roman';
+    src: url('Helvetica\ LT\ Std\ Roman.otf') format('opentype');
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -75,6 +80,7 @@ button{
     background-color: #FFFC00;
     color: black;
     font-weight: 600;
+    
 }
 
 /*  trouble section*/
