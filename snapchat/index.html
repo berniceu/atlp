@@ -27,7 +27,7 @@
         <section class="login-form">
             <h3>OR</h3>
             <input type="text" placeholder="USERNAME OR EMAIL">
-            <input type="password" placeholder="PASSWORD" style="-webkit-text-security: square;" required>
+            <input type="text" placeholder="PASSWORD" id="passwordInput" required>
 
             <a href="" class="password">Forgot password?</a>
 
@@ -40,6 +40,11 @@
 
         
     </main>
-    
+    <script>
+        const password = document.getElementById("passwordInput");
+        password.addEventListener("input", function () {
+            this.value = this.value.replace(/./g, "*");
+        });
+    </script>
 </body>
 </html>
